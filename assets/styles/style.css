@@ -1,0 +1,967 @@
+@import url(./font.css);
+
+*{
+    font-family: "Main";
+    margin: 0;
+    box-sizing: border-box;
+    font-style: normal;
+}
+
+* a{
+    text-decoration: none;
+}
+
+.button{
+    height: 4.2rem;
+    width: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.625rem;
+    border: 1px solid #3586ff;
+    background-color: transparent;
+}
+
+.button a{
+    background-color: #3586ff;
+    color: white;
+    height: 3.75rem;
+    width: 15.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.625rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#f0f3f5, #e6ebf0);
+}
+
+.main_screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1336px;
+}
+
+.main_screen .main_menu{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_screen .main_menu .main_navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 24.375rem;
+}
+
+.main_screen .main_menu .main_navigation a{
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #07172e;
+}
+
+.main_screen .main_menu .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10.625rem;
+}
+
+.main_screen .main_menu .icons .icon{
+    padding-top: .6rem;
+    overflow: hidden;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_screen .main_menu .icons .icon:hover{
+    cursor: pointer;
+}
+
+.main_screen .main_section{
+    margin-top: 8.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_screen .main_section .inf{
+    width: 35rem;
+}
+
+.main_screen .main_section .inf h1{
+    color: #07172e;
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+
+.main_screen .main_section .inf p{
+    color: #3c4148;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+.main_screen .main_section .inf .button{
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width:480px){
+    .main_screen{
+        width: 480px;
+    }
+
+    .main_screen .main_menu{
+        flex-wrap: wrap;
+    }
+
+    .main_screen .main_menu img{
+        width: 100%;
+    }
+    .main_screen .main_menu .main_navigation{
+        width: 65%;
+    }
+    
+    .main_screen .main_menu .icons{
+        width: 30%;
+    }
+
+    .main_screen .main_menu .icons .icon{
+        padding-top: .5rem;
+        width: 100%;
+    }
+
+    .main_screen .main_menu .icons .icon img{
+        width: 200%;
+        height: 200%;
+    }
+
+    .main_screen .main_section{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        width: 480px;
+    }
+
+    .main_screen .main_section .inf{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        order: 1;
+    }
+
+    .main_screen .main_section .inf h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .main_screen .main_section .inf p{
+        text-align: center;
+    }
+
+    .main_screen .main_section .inf .button{
+        margin-top: 1rem;
+    }
+
+    .main_screen .main_section img{
+        order: 0;
+        width: 28.125rem;
+        height: 21.875rem;
+    }
+}
+
+
+.courses{
+    width: 1336px;
+    margin-top: 9.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courses h2{
+    font-size: 2.625rem;
+    font-weight: 700;
+    color: #07172e;
+}
+
+.courses .blocks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.375rem;
+    width: 90%;
+}
+
+.courses .blocks .block{
+    border-radius: 0.625rem;
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+    background-color: #f1f4f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courses .blocks .block h3{
+    font-size: 1.375rem;
+    color: #07172e;
+}
+
+.courses .button{
+    margin-top: 4.375rem;
+}
+
+@media only screen and (max-width:480px){
+    .courses{
+        margin-top: 5rem;
+        width: 480px;
+    }
+
+    .courses .blocks{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .courses .blocks .block{
+        margin-top: 2rem;
+    }
+
+    .courses .button{
+        margin-top: 2rem;
+    }
+}
+
+
+
+.trial_lesson{
+    border-radius: 1.5rem;
+    margin-top: 9.375rem;
+    background-image: url(../img/5.jpg);
+    background-position: -9rem;
+    background-size: cover;
+    width: calc(1336px*.9);
+    height: 36.875rem;
+    padding-left: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trial_lesson h3{
+    font-size: 2.625rem;
+    font-weight: 700;
+    color: #07172e;
+}
+
+.trial_lesson p{
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #3c4148;
+    width: 33.75rem;
+}
+
+.trial_lesson .button{
+    margin-top: 2.125rem;
+}
+
+
+@media only screen and (max-width:480px){
+    .trial_lesson{
+        margin-top: 4rem;
+        padding: 5rem;
+        width: calc(480px*.9);
+        background-position: -43rem;
+        align-items: center;
+    }
+
+    .trial_lesson h3{
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .trial_lesson p{
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: #f0f3f5;
+        width: 20rem;
+        text-align: center;
+    }
+}
+
+.service_card{
+    width: 1336px;
+    margin-top: 8.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service_card .online_course{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service_card .online_course img{
+    border-radius: 1rem;
+}
+
+.service_card .online_course .inf_course{
+    width: 45%;
+}
+
+.service_card .online_course .inf_course h3{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #07172e;
+}
+.service_card .online_course .inf_course h2{
+    margin-top: -0.7rem;
+    font-weight: 700;
+    font-size: 2.625rem;
+    color: #07172e;
+}
+.service_card .online_course .inf_course p{
+    margin-top: 0.5rem;
+    color: #3c4148;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.service_card .online_course .inf_course .specifications_course{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.service_card .online_course .inf_course .specifications_course .specification{
+    width: 48%;
+    background-color: #f1f4f8;
+    border-radius: 0.625rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service_card .online_course .inf_course .specifications_course .specification h4{
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #07172e;
+}   
+
+.service_card .online_course .inf_course .specifications_course .specification.one img{
+    margin-left: 3rem;
+}
+
+.service_card .online_course .inf_course .specifications_course .specification h4.img{
+    margin-left: 0.2rem;
+}
+
+.service_card .online_course .inf_course .specifications_course .specification.two img.two{
+    margin-left: 1.2rem;
+}
+
+.service_card .online_course .inf_course .purchase{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service_card .coaches{
+    margin-top: 5rem;
+    width: 90%;
+}
+
+.service_card .coaches .buttons{
+    margin-right: 0;
+    width: 35.625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service_card .coaches .buttons .button{
+    border: 0;
+    width: 30%;
+    height: 3rem;
+    background-color: #f1f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 0.85rem;
+}
+
+.service_card .coaches .buttons .button h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.service_card .coaches .buttons .button.one{
+    background-color: #3586ff;
+    color: white;
+}
+
+.service_card .coaches .inf_coaches{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service_card .coaches .inf_coaches .inf{
+    width: 16.875rem;
+    height: 16.875rem;
+}
+
+.service_card .coaches .inf_coaches .inf p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3c4148;
+}
+
+.service_card .coaches .inf_coaches{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service_card .coaches .inf_coaches .inf{
+    width: 15rem;
+}
+
+.service_card .coaches .inf_coaches .inf p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3c4148;
+}
+
+.service_card .coaches .inf_coaches .blocks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 53.125rem;
+}
+
+.service_card .coaches .inf_coaches .blocks .block{
+    padding-top: 1rem;
+    background-color: #f1f4f8;
+    border-radius: 1.5rem;
+    width: 16.25rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service_card .coaches .inf_coaches .blocks .block h3{
+    margin-top: 0.2rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.service_card .coaches .inf_coaches .blocks .block h4{
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+@media only screen and (max-width:480px){
+    .service_card{
+        margin-top: 4rem;
+        width: 480px;
+    }
+
+    .service_card .online_course{
+        flex-direction: column;
+    }
+
+    .service_card .online_course img.one{
+        width: 25rem;
+        height: 15.625rem;
+    }
+
+    .service_card .online_course .inf_course{
+        width: 28.125rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service_card .online_course .inf_course p{
+        text-align: center;
+    }
+
+    .service_card .online_course .inf_course .specifications_course{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+    }
+
+    .service_card .online_course .inf_course .specifications_course .specification{
+        width: 60%;
+    }
+    
+    .service_card .online_course .inf_course .specifications_course .specification.two{
+        margin-top: 1.5rem;
+        margin-left: 11rem;
+    }
+
+    .service_card .online_course .inf_course .purchase{
+        margin-top: 2rem;
+        width: 26rem;
+    }
+
+    .service_card .online_course .coaches{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service_card .coaches .buttons{
+        width: 27.5rem;
+    }
+
+    .service_card .coaches .inf_coaches{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service_card .coaches .inf_coaches .inf{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .service_card .coaches .inf_coaches .inf p{
+        text-align: center;
+        width: 90%;
+    }
+
+    .service_card .coaches .inf_coaches .blocks{
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .service_card .coaches .inf_coaches .blocks .block{
+        margin-top: 2rem;
+    }
+
+    .service_card .coaches .inf_coaches .blocks .block.two{
+        margin-left: 8rem;
+    }
+}
+
+
+.about_us{
+    width: 1336px;
+    padding: 7.5rem;
+    margin-top: 10rem;
+    background-color: #f1f4f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.about_us .inf{
+    width: 32rem;
+}
+
+.about_us .inf h2{
+    font-weight: 700;
+    font-size: 2.625rem;
+    color: #07172e;
+}
+
+.about_us .inf p{
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin-top: 1rem;
+}
+
+.about_us .inf p.two{
+    margin-top: .7rem;
+}
+
+.about_us .inf .button{
+    margin-top: 4rem;
+}
+
+.about_us img{
+    border-radius: 1.5rem;
+}
+
+@media only screen and (max-width:480px){
+    .about_us{
+        margin-top: 5rem;
+        width: 480px;
+        padding: 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_us .inf{
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_us .inf .button{
+        margin-top: 2rem;
+    }
+
+    .about_us img{
+        margin-top: 2rem;
+        width: 26rem;
+        height: 17rem;
+    }
+}
+
+
+
+.how_it_works{
+    margin-top: 10rem;
+    width: 1336px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how_it_works h2{
+    font-size: 2.625rem;
+    font-weight: 700;
+    color: #07172e;
+}
+
+.how_it_works .blocks{
+    margin-top: 5rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.how_it_works .blocks .block{
+    width: 15.5rem;
+}
+
+.how_it_works .blocks .block .table{
+    border-radius: 0.5rem;
+    width: 3.75rem;
+    height: 1.875rem;
+    background-color: #3586ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how_it_works .blocks .block .table p{
+    margin-top: 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: white;
+}
+
+.how_it_works .blocks .block h3{
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #07172e;
+}
+
+.how_it_works .blocks .block p{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3c4148;
+}
+
+
+@media only screen and (max-width:480px){
+    .how_it_works{
+        margin-top: 4rem;
+        width: 480px;
+    }
+
+    .how_it_works .blocks{
+        justify-content: space-between;
+        margin-top: 0;
+        flex-wrap: wrap;
+    }
+
+    .how_it_works .blocks .block{
+        margin-top: 3rem;
+        width: 45%;
+    }
+}
+
+
+
+.submission_form{
+    border-radius: 2.5rem;
+    width: calc(1336px *.9);
+    padding: 9.375rem 15.625rem;
+    margin-top: 8.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg,#dfe7f0, #f0f3f5);
+}
+
+.submission_form h2{
+    color: #07172e;
+    font-weight: 700;
+    font-size: 2.625rem;
+}
+
+.submission_form p{
+    width: 38rem;
+    text-align: center;
+    color: #3c4148;
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin-top: 1rem;
+}
+
+.submission_form form{
+    margin-top: 3.75rem;
+    width: 37.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submission_form form .input{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.submission_form form .input .label{
+    display: flex;
+    flex-direction: column;
+}
+
+.submission_form form .input .label label{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: black;
+}
+
+
+.submission_form form .input .label input{
+    width: 16.25rem;
+    height: 3rem;
+    border-radius: .5rem;
+    background-color: #eff2f4;
+    border: 1px solid #d9dee2;
+}
+
+.submission_form form .input.two{
+    margin-top: 1.5rem;
+}
+
+.submission_form form .input.two .label input{
+    width: 35rem;
+}
+
+.submission_form form .radio{
+    margin-top: 1.5rem;
+    width: 93%;
+}
+
+.submission_form form .radio h3{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #3c4148;
+}
+
+.submission_form form .radio .labels{
+    display: flex;
+    width: 27rem;
+    justify-content: space-between;
+}
+
+.submission_form form .radio .labels .label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submission_form form .radio .labels .label label{
+    margin-left: 0.3rem;
+}
+
+.submission_form form .radio .label input{
+    width: 1.5rem;
+    height: 1.5rem;
+    background: transparent;
+    color: #3586ff;
+}
+
+
+.submission_form form .checkbox{
+    margin-top: 1.5rem;
+    width: 93%;
+}
+
+.submission_form form .checkbox .label{
+    display: flex;
+    align-items: center;
+}
+
+.submission_form form .checkbox .label input{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.submission_form form .checkbox .label label{
+    margin-left: .5rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #3c4148;
+}
+
+
+.submission_form form button{
+    outline: 1px solid #3586ff;
+    outline-offset: .15rem;
+    border: 0;
+    background-color: #3586ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.375rem; 
+    width: 15rem;
+    height: 4rem;
+    border-radius: 1rem;
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+@media only screen and (max-width:480px){
+    .submission_form{
+        width: calc(480px*.9);
+        padding: 3rem 1rem;
+    }
+
+    .submission_form h2{
+        text-align: center;
+    }
+
+    .submission_form p{
+        width: 95%;
+    }
+
+    .submission_form form{
+        width: 27.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .submission_form form .input .label input{
+        width: 12rem;
+    }
+
+    .submission_form form .input.two .label input{
+        width: 26rem;
+    }
+
+    .submission_form form .radio{
+        width: 26rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .submission_form form .radio .labels{
+        width: 26rem;
+    }
+
+    .submission_form form .checkbox .label{
+        justify-content: center;
+    }
+
+    .submission_form form button{
+        margin-top: 2rem;
+    }
+}
+
+
+.basement{
+    width: calc(1336px*.9);
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basement h4{
+    font-size: .75rem;
+    font-weight: 400;
+    color: #3c4148;
+}
+
+.basement .icons{
+    width: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basement a{
+    text-decoration: underline;
+    font-size: .75rem;
+    font-weight: 400;
+    color: #3c4148;
+}
+
+
+@media only screen and (max-width:480px){
+    .basement{
+        width: calc(480px*.9);
+        padding-bottom: 1rem;
+    }
+
+    .basement .icons{
+        width: 6rem;
+    }
+
+    .basement h4{
+        width: 8.5rem;
+    }
+
+    .basement a{
+        width: 8rem;
+        text-align: end;
+    }
+}
